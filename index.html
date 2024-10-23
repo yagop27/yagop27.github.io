@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yago Pais</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+          crossorigin="anonymous">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: #121212; /* Consistent background color */
+        color: #f8f9fa;
+        font-family: 'Poppins', sans-serif;
+      }
+      .text-justify {
+        text-align: justify;
+      }
+      .nav-link {
+        transition: color 0.3s ease;
+      }
+      .nav-link:hover {
+        color: #007bff;
+      }
+      .btn {
+        transition: background-color 0.3s ease;
+      }
+      .btn:hover {
+        background-color: #0056b3;
+      }
+      .card {
+        border: none;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+      footer {
+        background-color: #1c1c1c;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="py-2 bg-dark border-bottom sticky-top">
+      <div class="container d-flex flex-wrap">
+        <ul class="nav me-auto">
+          <li class="nav-item"><a class="nav-link link-body-emphasis px-2 text-white fs-4 fw-bold">Yago Pais</a></li>
+        </ul>
+        <ul class="nav">
+          <li class="nav-item"><a href="#about" class="nav-link link-body-emphasis px-2 text-white fs-5">About</a></li>
+          <li class="nav-item"><a href="#portfolio" class="nav-link link-body-emphasis px-2 text-white fs-5">Portfolio</a></li>
+          <li class="nav-item"><a href="#socialmedia" class="nav-link link-body-emphasis px-2 text-white fs-5">Social Media</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container text-center">
+        <img src="path_to_image.jpg" class="rounded-circle mb-4" alt="Profile Picture" width="150" height="150">
+        <h2 class="display-4">About Me</h2>
+        <p class="lead mb-4 text-justify">Hello, I’m Yago Pais, an aspiring Python developer with a solid background in Physics. After graduating in Brazil, I dedicated several years to teaching, where I found great fulfillment in helping students understand and appreciate the intricacies of science.</p>
+        <p class="lead mb-4 text-justify">As I transition into the tech industry, I am eager to take on new challenges and apply my analytical skills to programming. My experience in education has equipped me with a strong problem-solving mindset and the ability to communicate complex ideas clearly.</p>
+        <p class="lead mb-4 text-justify">I am committed to continuous learning and growth in programming, particularly in Python, and I am excited about the opportunities that lie ahead. Thank you for visiting my website—I look forward to connecting with others who share my passion for technology!</p>
+        <a href="#portfolio" class="btn btn-outline-primary">Check My Work</a>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Portfolio</h2>
+        <div class="row g-4">
+          <!-- Project 1 -->
+          <div class="col-lg-4">
+            <div class="card h-100 bg-light text-dark">
+              <div class="card-body">
+                <h5 class="card-title">Morse Code Converter</h5>
+                <p class="card-text">This project is a Python program that converts text into Morse code...</p>
+                <a href="https://github.com/yagop27/Morse-Code" class="btn btn-outline-primary">See project</a>
+              </div>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="col-lg-4">
+            <div class="card h-100 bg-light text-dark">
+              <div class="card-body">
+                <h5 class="card-title">Typing Speed Test</h5>
+                <p class="card-text">This is a simple Typing Speed Test app built with Python’s Tkinter library...</p>
+                <a href="https://github.com/yagop27/Typing-Speed-Test" class="btn btn-outline-primary">See project</a>
+              </div>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="col-lg-4">
+            <div class="card h-100 bg-light text-dark">
+              <div class="card-body">
+                <h5 class="card-title">Watermark Application</h5>
+                <p class="card-text">This is a Python app that lets you add a custom watermark to an image...</p>
+                <a href="https://github.com/yagop27/WaterMark-App" class="btn btn-outline-primary">See project</a>
+              </div>
+            </div>
+          </div>
+          <!-- Project 4 -->
+          <div class="col-lg-4">
+            <div class="card h-100 bg-light text-dark">
+              <div class="card-body">
+                <h5 class="card-title">Tic-Tac-Toe</h5>
+                <p class="card-text">This is a simple text-based Tic-Tac-Toe game for two players...</p>
+                <a href="https://github.com/yagop27/TextBase-TicTacToe" class="btn btn-outline-primary">See project</a>
+              </div>
+            </div>
+          </div>
+          <!-- Project 5 -->
+          <div class="col-lg-4">
+            <div class="card h-100 bg-light text-dark">
+              <div class="card-body">
+                <h5 class="card-title">Breakout Game</h5>
+                <p class="card-text">This is a Python version of the classic Breakout game using the Turtle library...</p>
+                <a href="https://github.com/yagop27/BreakoutGame" class="btn btn-outline-primary">See project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section id="socialmedia" class="py-5 text-center">
+      <h2>Connect with Me</h2>
+      <a href="https://linkedin.com" class="text-white me-4"><i class="fab fa-linkedin fa-2x"></i></a>
+      <a href="https://github.com/yagop27" class="text-white me-4"><i class="fab fa-github fa-2x"></i></a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white text-center">
+      <p>&copy; 2024 Yago Pais, to get in contact reach out through yagopais@id.uff.br. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+            crossorigin="anonymous"></script>
+  </body>
+</html>
